@@ -148,6 +148,9 @@ def basement():
         elif 'dude' in answer:
             print("\033[H\033[J")
             talk_dude()
+        elif 'conversation' in answer:
+            print("\033[H\033[J")
+            talk_dude()            
         elif 'ladder' in answer:
             ladder()
         elif 'chimney' in answer:
