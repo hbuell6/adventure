@@ -66,11 +66,11 @@ def talk_dude():
     print(
         '\t"Hello, sir," you say, "could you tell me how to get out of here?"')
     print('\t"Hang on, I\'m speedrunning here" he says,')
-    print('\t"I might be able to get sub 11 minutes if I get good RNG')
+    print('\t"I might be able to get sub 11 minutes if I get good RNG.')
     print(
         '\tYou look at the screen and the dude is definitely NOT speedrunning.'
     )
-    print('\tHe is running from a creeper and soon dies from it')
+    print('\tHe is running from a creeper and soon dies from it.')
     print(
         '\t"Okay, so I\'m not very good at the game, but this is actually a magic screen.'
     )
@@ -81,6 +81,8 @@ def talk_dude():
         '\tThat might help you escape. Whaddaya say? You want something big,')
     print('\tor something shiny?" He asks proudly, gesturing to the screen.')
     print('\tWhat will you choose?')
+
+    answer = input("> ").lower()
 
     while True:
         if 'shiny' in answer:
@@ -124,14 +126,14 @@ def ladder():
 
 # --------------------------------------------------
 def basement():
-    print('\tYou follow the staircase downward and enter a basement')
+    print('\tYou follow the staircase downward and enter a basement.')
     print('\tIt actually looks more like a recreation room.')
     print(
-        '\tYou can see a dude in front of a large screen playing what looks like Minecraft'
+        '\tYou can see a dude in front of a large screen playing what looks like Minecraft.'
     )
     print('\tAcross the room, there is a ladder leading up a wide chimney.')
     print('\tLooks like you could either talk to Minecraft Dude or')
-    print('\tignore him and try for the ladder')
+    print('\tignore him and try for the ladder.')
     print('\tWhat will you do?')
 
     answer = input("> ").lower()
