@@ -65,12 +65,12 @@ def talk_dude():
     print('\tYou walk over to where Minecraft Dude is sitting.')
     print(
         '\t"Hello, sir," you say, "could you tell me how to get out of here?"')
-    print('\t"Hang on, I\'m speedrunning here" he says,')
+    print('\t"Hang on a sec, I\'m speedrunning" he says,')
     print('\t"I might be able to get sub 11 minutes if I get good RNG.')
     print(
-        '\tYou look at the screen and the dude is definitely NOT speedrunning.'
+        '\tYou look at the screen and the Dude is definitely NOT speedrunning.'
     )
-    print('\tHe is running from a creeper and soon dies from it.')
+    print('\tHe is running from a creeper which then explodes on him.')
     print(
         '\t"Okay, so I\'m not very good at the game, but this is actually a magic screen.'
     )
@@ -169,7 +169,7 @@ def basement():
 # --------------------------------------------------
 def trap_door():
     print("\033[H\033[J")
-    print('\tIgnoring Dennis\'s advice, you turn left')
+    print('\tIgnoring Dennis\'s advice, you turn left.')
     print('\tNot too long after turning, you hit a wall.')
     print('\tYou feel around on the wall and you find a button!')
     print(
@@ -185,9 +185,9 @@ def trap_door():
 # --------------------------------------------------
 def escape():
     print("\033[H\033[J")
-    print('\tYou decide to listen to your cool new friend, Dennis')
+    print('\tYou decide to listen to your cool new friend, Dennis.')
     print(
-        '\tYou continue straight through the passageway, and eventually reach a clearing'
+        '\tYou continue straight through the passageway, and eventually reach a clearing.'
     )
     print('\tA lovely meadow stands before you and you realize-')
     print('\tyou know exactly where you are! Your home isn\'t far from here!')
@@ -202,7 +202,7 @@ def secret_passage():
     print('\tYou enter the passage on your hands and knees.')
     print('\tIt\'s dark, but the passage is pretty straight,')
     print('\tso it\'s easy enough to keep going without being able to see.')
-    print('\tYou stop to rest a bit a ways into the tunnel')
+    print('\tYou stop to rest a bit a ways into the tunnel.')
     print('\tand you feel a slight breeze coming from your left.')
     print('\tYou know Dennis told you to go straight until you get outside,')
     print('\tbut there\'s gotta be something interesting the other way!')
@@ -213,10 +213,14 @@ def secret_passage():
     while True:
         if 'straight' in answer:
             escape()
+        elif 'forward' in answer:
+            escape()
         elif 'left' in answer:
             trap_door()
+        elif 'other' in answer:
+            trap_door()
         elif answer == 'back':
-            print('\n\tNo going back now, it\'s too narrow to turn around')
+            print('\n\tNo going back now, it\'s too narrow to turn around.')
             answer = input("> ").lower()
         elif answer == 'exit':
             exit()
@@ -230,17 +234,17 @@ def secret_passage():
 def talk_dennis():
     print('\tYou walk over to Dennis. "Excuse me, sir," you say,')
     print('\t"Are you Dennis?" The man slowly stops spinning in his chair.')
-    print('\tHe turns to look at you. "What do you want?" he says, annoyed')
+    print('\tHe turns to look at you. "What do you want?" he says, annoyed,')
     print('\t"I had almost reached maximum velocity."')
     print(
         '\t"Sorry to disturb you," you begin, "but do you happen to know of a way out of here?"'
     )
     print(
         '\t"If I tell you, will you let me get back to my spinning?" He asks.')
+    print('\t"Indeed, sir." you say.')
+    print('"I don\'t usually tell people this, but,"')
     print(
-        '\t"Indeed, sir." you say. "I don\'t usually tell people this, but,"')
-    print(
-        '\tDennis starts to get up from his beloved chair and moves to the corner of the room'
+        '\tDennis starts to get up from his beloved chair and moves to the corner of the room,'
     )
     print('\t"I like you, so I\'ll let you in on a little secret"')
     print(
@@ -291,20 +295,18 @@ def colosseum_from_stairs():
         elif 'window' in answer:
             print("\033[H\033[J")
             print('\tYou sqeeze yourself through the small window and')
-            print('\thoist yourself down to the floor')
-            print('\tYou realize you\'re right back where you started')
+            print('\thoist yourself down to the floor.')
+            print('\tYou realize you\'re right back where you started.')
             cell_1()
         elif 'right' in answer:
             print("\033[H\033[J")
             print('\tYou sqeeze yourself through the small window and')
-            print('\thoist yourself down to the floor')
-            print('\tYou realize you\'re right back where you started')
+            print('\thoist yourself down to the floor.')
+            print('\tYou realize you\'re right back where you started.')
             cell_1()
         elif answer == 'back':
             print("\033[H\033[J")
-            print(
-                '\tActually, that basement looked pretty interesting.'
-            )
+            print('\tActually, that basement looked pretty interesting.')
             basement()
         elif answer == 'exit':
             exit()
@@ -334,8 +336,8 @@ def colosseum_from_dennis():
         elif 'window' in answer:
             print("\033[H\033[J")
             print('\tYou sqeeze yourself through the small window and')
-            print('\thoist yourself down to the floor')
-            print('\tYou realize you\'re right back where you started')
+            print('\thoist yourself down to the floor.')
+            print('\tYou realize you\'re right back where you started.')
             cell_1()
         elif answer == 'back':
             print("\033[H\033[J")
@@ -588,7 +590,7 @@ def cell_2():
         '\tThere is a small window high in the back wall with chains dangling down.'
     )
     print('\tMaybe you could climb them?')
-    print('\tCuriously, there is also a wooden hatch in center of the floor')
+    print('\tCuriously, there is also a wooden hatch in center of the floor.')
     print('\tWhere could it lead?')
     print('\tWhat will you do?')
 
@@ -617,9 +619,8 @@ def cell_2():
 def talk_guard():
     print("\033[H\033[J")
     print(
-        '\n\t"Hello there!" you yell, casually walking over to the bulky guard.'
-    )
-    print('\tHe turns to face you with a furrowed brow and a deep frown')
+        '\t"Hello there!" you yell, casually walking over to the bulky guard.')
+    print('\tHe turns to face you with a furrowed brow and a deep frown.')
     print(
         '\t"In all my years guarding this dungeon, no one has EVER escaped!"')
     print('\the shouts, stomping over to your location, "You\'re the first."')
@@ -631,9 +632,9 @@ def talk_guard():
     print(
         '\tShocked, but flattered, you agree. He shows you to your new office')
     print('\twhich looks surprisingly like the cell you just escaped from')
-    print('\texcept it has a motivational kitten poster hanging on the wall')
+    print('\texcept it has a motivational kitten poster hanging on the wall.')
     print(
-        '\tYou spend the rest of your days trying to bring Prison Corp into the modern era'
+        '\tYou spend the rest of your days trying to bring Prison Corp into the modern era.'
     )
     game_over('You have won. Probably.')
 
@@ -651,7 +652,7 @@ def guard():
     print(
         '\tAlternatively, you could just walk up to the guard and talk to him.'
     )
-    print('\tWho knows? Maybe you\'ll make a friend')
+    print('\tWho knows? Maybe you\'ll make a friend.')
     print('\tWhat will you do?')
 
     answer = input("> ").lower()
@@ -660,6 +661,8 @@ def guard():
         if 'guard' in answer:
             talk_guard()
         elif 'talk' in answer:
+            talk_guard()
+        elif 'conversation' in answer:
             talk_guard()
         elif 'cell' in answer:
             cell_2()
@@ -775,6 +778,8 @@ def cell_1():
     while True:
         if 'moss' in answer:
             moss()
+        elif 'left' in answer:
+            moss()
         elif 'door' in answer:
             hallway_1()
         elif 'window' in answer:
@@ -803,7 +808,7 @@ def start():
     print('\tto choose where to go, with whom to interact or ignore,')
     print('\tand ultimately how to shape your own destiny.')
     print('\tIf at any time you feel lost or stuck, you can type "back"')
-    print('\tto go to the previous room, or "exit" to quit the game')
+    print('\tto go to the previous room, or "exit" to quit the game.')
     print('\tFare thee well on thy quest, adventurer!')
     print('\tMay this dungeon prove a worthy challenge! Shall we begin? (Y/N)')
 
