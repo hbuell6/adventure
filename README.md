@@ -12,7 +12,7 @@ not knowing exactly what all of your choices are and not being forced to type on
 full sentences as long as key words are recognized. For example, if there is a character you want to talk to, you may type the character's name,
 or `talk to {character}`, or `strike up a conversation`. I haven't put in all possibilities for user input, just what I thought would be most 
 obvious or commonly used. If there is input the game doesn't recognize, a hint will be given for the options available in that room, and the user
-will have as many chances as they like to type in a recognized input.
+will have as many chances as they like to type in a recognized input. Input is not case-sensitive.
 
 Typing `back`:
 
