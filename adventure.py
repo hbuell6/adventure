@@ -416,12 +416,14 @@ def ladder():
         if 'continue' in answer:
             print("\033[H\033[J")
             print('\tYou decide to press on up the ladder.')
-            print('\tEventually, you emerge in another room.')
+            print('\tEventually, you emerge from a fireplace in another room.')
+            print('\tThat explains the smoke smell.')
             CEO_cell()
         elif 'up' in answer:
             print("\033[H\033[J")
             print('\tYou decide to press on up the ladder.')
-            print('\tEventually, you emerge in another room.')
+            print('\tEventually, you emerge from a fireplace in another room.')
+            print('\tThat explains the smoke smell.')
             CEO_cell()
         elif 'down' in answer:
             basement_from_ladder()
@@ -813,9 +815,9 @@ def colosseum_skeleton():
     print('\tYou turn right down the tunnel.')
     print('\tShortly after taking the turn, the tunnel begins to flood with')
     print('\tan eerie yellowish light, making it difficult to see ahead.')
-    print('\tSuddenly, you realize the floor beneath you is gone.')
-    print('\tYou land with a thud on the dirt floor.')
-    print('\tYou are a bit shocked, but unharmed.')
+    print('\tSuddenly, you realize the ground beneath you is gone.')
+    print('\tYou land with a thud on a dirt floor.')
+    print('\tYou are a bit shocked, but otherwise unharmed.')
     colosseum()
 
 
@@ -1122,7 +1124,7 @@ def start():
     print('\tto choose where to go, with whom to interact or ignore,')
     print('\tand ultimately how to shape your own destiny.')
     print('\tIf at any time you feel lost or stuck, you can type "back"')
-    print('\tto go to the previous room, or "exit" to quit the game.')
+    print('\tto go to a previous room, or "exit" to quit the game.')
     print('\tFare thee well on thy quest, adventurer!')
     print('\tMay this dungeon prove a worthy challenge! Shall we begin? (Y/N)')
 
