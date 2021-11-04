@@ -132,7 +132,7 @@ def eject():
     print('\tinto the open air. You pull the parachute lever on your chair,')
     print('\tbut it doesn\'t seem to be working.')
     print('\tAs you fall further and further, you wonder what.')
-    print('\tthe blue button might have done and if you would have lived.')
+    print('\tthe blue button might have done and if you could go back.')
     game_over('You have died')
 
 
@@ -289,7 +289,7 @@ def kitten_poster():
         '\tto reveal a small lever. You pull it and the ceiling begins to open.'
     )
     print('\tYou can now see the sky. Maybe you can get out from here?')
-    print('\tYou climg the cell wall and look down to see a moat.')
+    print('\tYou climb the cell wall and look down to see a moat.')
     print('\tIf you jump, it might be enough to break your fall safely.')
     print(
         '\tOn the other hand, you could play it safe and head back into the cell'
