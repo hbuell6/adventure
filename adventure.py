@@ -106,22 +106,333 @@ def talk_dude():
 
 
 # --------------------------------------------------
+def land_safely():
+    print("\033[H\033[J")
+    print('\tYou slam your hand on the blue button as fast as you can.')
+    print('\tThe pod stops and begins to plumet back to the earth.')
+    print('\tIs this the end? Surely, you won\'t survive the fall.')
+    print(
+        '\tAs you get closer to crashing, you suddenly feel the pod slowing.')
+    print('\tThe boosters have kicked in and you make a safe landing!')
+    print(
+        '\tAs you exit the pod, you thank your lucky stars that you\'re alive.'
+    )
+    print(
+        '\tYou walk for a few hours, but you are eventually able to find a town'
+    )
+    print('\tand you make it home from there.')
+    game_over('Congratulations on surviving the dungeon!')
+
+
+# --------------------------------------------------
+def eject():
+    print("\033[H\033[J")
+    print('\tYou slam your hand on the yellow button as fast as you can.')
+    print('\tThe hatch at the top of the pod opens and you are flung out')
+    print('\tinto the open air. You pull the parachute lever on your chair,')
+    print('\tbut it doesn\'t seem to be working.')
+    print('\tAs you fall further and further, you wonder what.')
+    print('\tthe blue button might have done and if you would have lived.')
+    game_over('You have died')
+
+
+# --------------------------------------------------
+def escape_pod():
+    print("\033[H\033[J")
+    print('\tYou turn left down the hallway.')
+    print('\tAt the end of the hall, there is an open escape pod!')
+    print('\tThis must be your lucky day! You scramble into the pod,')
+    print('\tshut the door, and push the big red button labeled "Take off".')
+    print('\tIn a burst of flames, the pod lifts off into the air.')
+    print('\tYou soon realize you\'re about to break free of the atmosphere!')
+    print(
+        '\tYou look on the control panel and see a blue button and a yellow button.'
+    )
+    print('\tOne of them has got to land this pod, right?')
+    print('\tWhich button will you push?')
+
+    answer = input("> ").lower()
+
+    while True:
+        if 'blue' in answer:
+            land_safely()
+        elif 'yellow' in answer:
+            eject()
+        elif answer == 'back':
+            print(
+                '\tThere\'s no turning back now! You\'re almost in outer space!'
+            )
+            answer = input("> ").lower()
+        elif answer == 'exit':
+            exit()
+        else:
+            print('\n\tYou can\'t do that.')
+            print('\tTry typing blue or yellow')
+            answer = input("> ").lower()
+
+
+# --------------------------------------------------
+def hall_hatch():
+    print("\033[H\033[J")
+    print('\tYou turn right down the hall and reach a dead end.')
+    print('\tSeeing nothing at all of interest, you are about to turn back')
+    print('\twhen all of a sudden, the floor opens beneath you!')
+    print('\tYou fall and land quite harshly on a dirt floor.')
+    colosseum()
+
+
+# --------------------------------------------------
+def hallway_2():
+    print("\033[H\033[J")
+    print('\tYou head through the door and into the hallway.')
+    print('\tA short ways in, the hall forks.')
+    print('\tYou look left and see what could be an escape pod.')
+    print('\tTo the right, you don\'t see anything interesting,')
+    print('\tbut you could check it out anyway')
+    print('\tOr, you know, you could head back to the cell.')
+    print('\tYour choice.')
+
+    answer = input("> ").lower()
+
+    while True:
+        if 'left' in answer:
+            escape_pod()
+        elif 'escape' in answer:
+            escape_pod()
+        elif 'right' in answer:
+            hall_hatch()
+        elif answer == 'back':
+            print("\033[H\033[J")
+            print(
+                '\tYou\'d rather not add any more choices to your growing list. You head back.'
+            )
+            CEO_cell()
+        elif answer == 'exit':
+            exit()
+        else:
+            print('\n\tYou can\'t do that.')
+            print('\tTry typing left or right')
+            answer = input("> ").lower()
+
+
+# --------------------------------------------------
+def shore():
+    print("\033[H\033[J")
+    print('\tYou decide to stay on the duck and quietly float to shore.')
+    print(
+        '\tAfter all, you\'ve had a long day. You get to shore and hop of the duck.'
+    )
+    print(
+        '\t"Goodbye old friend." You say as you watch him drift back to the dungeon.'
+    )
+    print('\tYou look around and see a familiar landmark.')
+    print('\tYou know how to get home from here!')
+    print('\tYou run home as fast as you can eager to tell your friends and')
+    print('\tfamily about your grand adventure!')
+    game_over('Congratulations on escaping the dungeon!')
+
+
+# --------------------------------------------------
+def alligator():
+    print("\033[H\033[J")
+    print('\tYou decide you\'d rather get to shore as fast as possible')
+    print('\tYou hop off the duck and begin to swim to land.')
+    print('\tUnfortunately for you, all the ruckus you\'re making')
+    print(
+        '\tattracts a moat alligator. Maybe you should have stayed on the duck.'
+    )
+    game_over('You have died')
+
+
+# --------------------------------------------------
+def jump():
+    print("\033[H\033[J")
+    print('\tYou take a deep breath, close your eyes, and jump from the wall.')
+    print('\tYou fall for a bit and splash down into the water,')
+    print('\tbut your arm catches on something before you sink too deep.')
+    print('\tYou surface and realize it\'s a giant duck floaty!')
+    print('\tYou hoist yourself up onto the floaty and notice the current is')
+    print('\tslowly but steadily pulling you to shore.')
+    print(
+        '\tYou could get off and swim the rest of the way, it\'s still quite a ways.'
+    )
+    print('\tOr you could stay on the duck.')
+
+    answer = input("> ").lower()
+
+    while True:
+        if 'duck' in answer:
+            shore()
+        elif 'stay' in answer:
+            shore()
+        elif 'swim' in answer:
+            alligator()
+        elif 'off' in answer:
+            alligator()
+        elif answer == 'back':
+            print('\tYou can\'t go back! The wall is too high!')
+            answer = input("> ").lower()
+        elif answer == 'exit':
+            exit()
+        else:
+            print('\n\tYou can\'t do that.')
+            print('\tTry typing an action')
+            answer = input("> ").lower()
+
+
+# --------------------------------------------------
+def kitten_poster():
+    print("\033[H\033[J")
+    print('\tYou cross the room to the kitten poster.')
+    print('\tLooks like your hunch was right! You lift up the corner')
+    print(
+        '\tto reveal a small lever. You pull it and the ceiling begins to open.'
+    )
+    print('\tYou can now see the sky. Maybe you can get out from here?')
+    print('\tYou climg the cell wall and look down to see a moat.')
+    print('\tIf you jump, it might be enough to break your fall safely.')
+    print(
+        '\tOn the other hand, you could play it safe and head back into the cell'
+    )
+    print('\tWhat will you do?')
+
+    answer = input("> ").lower()
+
+    while True:
+        if 'jump' in answer:
+            jump()
+        elif 'moat' in answer:
+            jump()
+        elif 'cell' in answer:
+            print("\033[H\033[J")
+            print(
+                '\tYou\'d rather not risk it. You climb back down and pull the lever to close the roof.'
+            )
+            CEO_cell()
+        elif answer == 'back':
+            print("\033[H\033[J")
+            print(
+                '\tYou\'d rather not risk it. You climb back down and pull the lever to close the roof.'
+            )
+            CEO_cell()
+        elif answer == 'exit':
+            exit()
+        else:
+            print('\n\tYou can\'t do that.')
+            print('\tTry typing the name of a location or object')
+            answer = input("> ").lower()
+
+
+# --------------------------------------------------
+def CEO_cell():
+    print('\tThe room is another cell, similar to the one you started in')
+    print('\texcept this one has a motivational kitten poster on the wall.')
+    print('\tYou notice the poster is slightly bulging in one area.')
+    print('\tCould it be hiding something?')
+    print('\tThere is an open door on the opposite side of the room leading')
+    print('\tto what looks like a long hallway.')
+    print('\tWhere will you go?')
+
+    answer = input("> ").lower()
+
+    while True:
+        if 'kitten' in answer:
+            kitten_poster()
+        elif 'poster' in answer:
+            kitten_poster()
+        elif 'door' in answer:
+            hallway_2()
+        elif 'hall' in answer:
+            hallway_2()
+        elif answer == 'back':
+            basement_from_ladder()
+        elif answer == 'exit':
+            exit()
+        else:
+            print('\n\tYou can\'t do that.')
+            print('\tTry typing the name of a location or object')
+            answer = input("> ").lower()
+
+
+# --------------------------------------------------
+def basement_from_ladder():
+    print("\033[H\033[J")
+    print('\tYou\'d rather try your luck elsewhere. You climb back down.')
+    print(
+        '\tYou can see a dude in front of a large screen playing what looks like Minecraft.'
+    )
+    print('\tAcross the room, there is a staircase leading to the colosseum.')
+    print('\tLooks like you could either talk to Minecraft Dude or')
+    print('\tignore him and try for the stairs.')
+    print('\tWhat will you do?')
+
+    answer = input("> ").lower()
+
+    while True:
+        if 'talk' in answer:
+            print("\033[H\033[J")
+            talk_dude()
+        elif 'minecraft' in answer:
+            print("\033[H\033[J")
+            talk_dude()
+        elif 'dude' in answer:
+            print("\033[H\033[J")
+            talk_dude()
+        elif 'conversation' in answer:
+            print("\033[H\033[J")
+            talk_dude()
+        elif 'stair' in answer:
+            colosseum_from_stairs()
+        elif 'colosseum' in answer:
+            colosseum_from_stairs()
+        elif answer == 'back':
+            print("\033[H\033[J")
+            print(
+                '\tMaybe the smoke isn\'t dangerous. You go back up the ladder.'
+            )
+            colosseum_from_stairs()
+        elif answer == 'exit':
+            exit()
+        else:
+            print('\n\tYou can\'t do that.')
+            print('\tTry typing the name of a location or object')
+            answer = input("> ").lower()
+
+
+# --------------------------------------------------
 def ladder():
     print("\033[H\033[J")
     print('\tYou ignore Minecraft Dude and head straight for the ladder.')
     print('\tYou take a look up the chimney and you see a light!')
     print('\tThis must be the way out!')
     print('\tExcited, you scramble up the ladder as fast as you can.')
-    print(
-        '\tOnce you get a ways up, you realize the light you see is steadily blinking.'
-    )
-    print(
-        'You decide to investigate. Once you get close enough to tell what it is though,'
-    )
-    print(
-        'it\'s already too late. It\'s a flashing time bomb! And it\'s out of time!'
-    )
-    game_over('You have died')
+    print('\tOnce you get a ways up, you realize the you can smell smoke.')
+    print('\tCould be risky. should you continue up the ladder?')
+    print('\tOr would you rather go back down where you know it\'s safe?')
+
+    answer = input("> ").lower()
+
+    while True:
+        if 'continue' in answer:
+            print("\033[H\033[J")
+            print('\tYou decide to press on up the ladder.')
+            print('\tEventually, you emerge in another room.')
+            CEO_cell()
+        elif 'up' in answer:
+            print("\033[H\033[J")
+            print('\tYou decide to press on up the ladder.')
+            print('\tEventually, you emerge in another room.')
+            CEO_cell()
+        elif 'down' in answer:
+            basement_from_ladder()
+        elif answer == 'back':
+            basement_from_ladder()
+        elif answer == 'exit':
+            exit()
+        else:
+            print('\n\tYou can\'t do that.')
+            print('\tTry typing up or down')
+            answer = input("> ").lower()
 
 
 # --------------------------------------------------
@@ -330,7 +641,7 @@ def colosseum_from_dennis():
     answer = input("> ").lower()
 
     while True:
-        if 'stairs' in answer:
+        if 'stair' in answer:
             print("\033[H\033[J")
             basement()
         elif 'right' in answer:
@@ -426,7 +737,7 @@ def colosseum():
         elif 'door' in answer:
             print("\033[H\033[J")
             dennis()
-        elif 'stairs' in answer:
+        elif 'stair' in answer:
             print("\033[H\033[J")
             basement()
         elif 'left' in answer:
