@@ -150,7 +150,7 @@ def basement():
             talk_dude()
         elif 'conversation' in answer:
             print("\033[H\033[J")
-            talk_dude()            
+            talk_dude()
         elif 'ladder' in answer:
             ladder()
         elif 'chimney' in answer:
@@ -661,18 +661,18 @@ def guard():
     answer = input("> ").lower()
 
     while True:
-        if 'guard' in answer:
-            talk_guard()
-        elif 'talk' in answer:
-            talk_guard()
-        elif 'conversation' in answer:
-            talk_guard()
-        elif 'cell' in answer:
+        if 'cell' in answer:
             cell_2()
         elif 'door' in answer:
             cell_2()
         elif 'sneak' in answer:
             cell_2()
+        elif 'guard' in answer:
+            talk_guard()
+        elif 'talk' in answer:
+            talk_guard()
+        elif 'conversation' in answer:
+            talk_guard()
         elif answer == 'back':
             print("\033[H\033[J")
             print(
