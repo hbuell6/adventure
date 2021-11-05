@@ -50,7 +50,7 @@ def diamond_sword():
     print(
         '\tAmazed, you take the sword from him and reflexivley hold it skyward'
     )
-    print('\tas if you were in a videogame yourself.')
+    print('\tas if you were in a video game yourself.')
     print(
         '\tInstantly, you are surrounded by a bright light and teleported outside.'
     )
@@ -407,7 +407,7 @@ def ladder():
     print('\tThis must be the way out!')
     print('\tExcited, you scramble up the ladder as fast as you can.')
     print('\tOnce you get a ways up, you realize the you can smell smoke.')
-    print('\tCould be risky. should you continue up the ladder?')
+    print('\tCould be risky. Should you continue up the ladder?')
     print('\tOr would you rather go back down where you know it\'s safe?')
 
     answer = input("> ").lower()
@@ -558,7 +558,7 @@ def talk_dennis():
     print(
         '\t"If I tell you, will you let me get back to my spinning?" He asks.')
     print('\t"Indeed, sir." you say.')
-    print('"I don\'t usually tell people this, but,"')
+    print('\t"I don\'t usually tell people this, but,"')
     print(
         '\tDennis starts to get up from his beloved chair and moves to the corner of the room,'
     )
@@ -855,7 +855,7 @@ def cliff():
     print(
         '\tAlas, in your haste, you failed to observe that the tunnel lets out'
     )
-    print('\tin a steep cliffside about 300 feet in the above a vast ocean.')
+    print('\tin a steep cliffside about 300 feet above a vast ocean.')
     print(
         '\tAs you fall, you imagine what might have been had you only turned right.'
     )
