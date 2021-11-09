@@ -222,7 +222,7 @@ def shore():
     print("\033[H\033[J")
     print('\tYou decide to stay on the duck and quietly float to shore.')
     print(
-        '\tAfter all, you\'ve had a long day. You get to shore and hop of the duck.'
+        '\tAfter all, you\'ve had a long day. You get to shore and hop off the duck.'
     )
     print(
         '\t"Goodbye old friend." You say as you watch him drift back to the dungeon.'
