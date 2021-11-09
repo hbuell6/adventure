@@ -144,7 +144,9 @@ def escape_pod():
     print('\tThis must be your lucky day! You scramble into the pod,')
     print('\tshut the door, and push the big red button labeled "Take off".')
     print('\tIn a burst of flames, the pod lifts off into the air.')
-    print('\tYou soon realize you\'re about to break free of the atmosphere!')
+    print('\tCould this be it? Are you finally home free?')
+    print('\tAfter a while you notice the pod is still ascending.')
+    print('\tYou realize you\'re about to break free of the atmosphere!')
     print(
         '\tYou look on the control panel and see a blue button and a yellow button.'
     )
