@@ -1029,7 +1029,7 @@ def hallway_1():
             guard()
         elif answer == 'back':
             print("\033[H\033[J")
-            print('\tYou head back into the cell.')
+            print('\tYou head back into the cell, closing the door behind you.')
             cell_1()
         elif answer == 'exit':
             exit()
