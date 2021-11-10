@@ -2,7 +2,7 @@
 
 Greetings adventurer!
 This program is a dungeon-escape text-based adventure. Through running `adventure.py`, you will be thrown in a cell and tasked to escape. 
-At this time, the adventure has 12 total endings: 7 where the player character dies and 5 that can be considered 'good endings'.
+At this time, the adventure has 13 total endings: 8 where the player character dies and 5 that can be considered 'good endings'.
 More rooms and endings may be added at a later date. 
 
 Typing input:
