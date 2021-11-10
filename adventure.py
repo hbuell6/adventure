@@ -189,7 +189,7 @@ def hall_hatch():
     print('\tmouth agape, waiting for it\'s next meal. That\'s a shame.')
     print('\tBurning alive almost sounds preferable to being eaten alive.')
     print('\tBut I guess you don\'t get that coice this time.')
-    game over('You have died')
+    game_over('You have died')
 
 
 # --------------------------------------------------
