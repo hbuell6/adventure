@@ -714,7 +714,7 @@ def dennis():
         elif 'talk' in answer:
             print("\033[H\033[J")
             talk_dennis()
-        elif 'conversation' in answer:
+        elif 'convers' in answer:
             print("\033[H\033[J")
             talk_dennis()
         elif 'dennis' in answer:
