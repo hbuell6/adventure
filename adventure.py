@@ -179,8 +179,17 @@ def hall_hatch():
     print('\tYou turn right down the hall and reach a dead end.')
     print('\tSeeing nothing at all of interest, you are about to turn back')
     print('\twhen all of a sudden, the floor opens beneath you!')
-    print('\tYou fall and land quite harshly on a dirt floor.')
-    colosseum()
+    print('\tYou start to fall, but you barely manage to grab the edge with both hands')
+    print('\tYou definitely don\'t have a very good grip though.')
+    print('\tYou turn your head behind you to look down. You can see an orange glow.')
+    print('\tLooks like you\'re dangling just above a fiery pit.')
+    print('\tYou feel your hands begin to grow numb from supporting your weight.')
+    print('\tThey slip from the ledge and you begin your descent.')
+    print('\tAs you grow closer to the glow, you realize it\'s a large dragon,')
+    print('\tmouth agape, waiting for it\'s next meal. That\'s a shame.')
+    print('\tBurning alive almost sounds preferable to being eaten alive.')
+    print('\tBut I guess you don\'t get that coice this time.')
+    game over('You have died')
 
 
 # --------------------------------------------------
