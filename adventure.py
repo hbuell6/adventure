@@ -11,7 +11,7 @@ def play_again():
 
     answer = input("> ").lower()
 
-    if "y" in answer:
+    if answer.startswith('y'):
         print("\033[H\033[J")
         print('\tYou awake in a dark cell.')
         print('\tWondering how you ended up in such a place,')
@@ -1130,7 +1130,7 @@ def start():
 
     answer = input("> ").lower()
 
-    if 'y' in answer:
+    if answer.startswith('y'):
         print("\033[H\033[J")
         print('\tYou awake in a dark cell.')
         print('\tWondering how you ended up in such a place,')
