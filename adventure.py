@@ -144,7 +144,9 @@ def escape_pod():
     print('\tThis must be your lucky day! You scramble into the pod,')
     print('\tshut the door, and push the big red button labeled "Take off".')
     print('\tIn a burst of flames, the pod lifts off into the air.')
-    print('\tYou soon realize you\'re about to break free of the atmosphere!')
+    print('\tCould this be it? Are you finally home free?')
+    print('\tAfter a while you notice the pod is still ascending.')
+    print('\tYou realize you\'re about to break free of the atmosphere!')
     print(
         '\tYou look on the control panel and see a blue button and a yellow button.'
     )
@@ -220,7 +222,7 @@ def shore():
     print("\033[H\033[J")
     print('\tYou decide to stay on the duck and quietly float to shore.')
     print(
-        '\tAfter all, you\'ve had a long day. You get to shore and hop of the duck.'
+        '\tAfter all, you\'ve had a long day. You get to shore and hop off the duck.'
     )
     print(
         '\t"Goodbye old friend." You say as you watch him drift back to the dungeon.'
@@ -1029,7 +1031,7 @@ def hallway_1():
             guard()
         elif answer == 'back':
             print("\033[H\033[J")
-            print('\tYou head back into the cell.')
+            print('\tYou head back into the cell, closing the door behind you.')
             cell_1()
         elif answer == 'exit':
             exit()
