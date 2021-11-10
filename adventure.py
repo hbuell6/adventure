@@ -188,7 +188,7 @@ def hall_hatch():
     print('\tAs you grow closer to the glow, you realize it\'s a large dragon,')
     print('\tmouth agape, waiting for it\'s next meal. That\'s a shame.')
     print('\tBurning alive almost sounds preferable to being eaten alive.')
-    print('\tBut I guess you don\'t get that coice this time.')
+    print('\tBut I guess you don\'t get that choice this time.')
     game_over('You have died')
 
 
