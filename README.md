@@ -27,8 +27,8 @@ At any point, you my type `exit` to quit out of the game. The game will always s
 
 Playing again:
 
-After you have completed one ending, the game will ask if you want to play again. Typing anything other than 'Y', 'y', 'yes', 'yeah', 'yep', 
-or any word containing a 'y' will exit the game. Typing a y-containing word will start you back in the first cell, skipping the intro screen.
+After you have completed one ending, the game will ask if you want to play again. Typing anything other than 'Y', 'y', 'yes', 'yeah', 'yep', etc. 
+will exit the game. Typing a word beginning with 'y' will start you back in the first cell, skipping the intro screen.
 
 Starting the game:
 
