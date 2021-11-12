@@ -32,14 +32,8 @@ will exit the game. Typing a word beginning with 'y' will start you back in the 
 
 Starting the game:
 
-To begin the game, first `cd` into the directory in which you have `adventure.py`. Then all you need to do, depending on which version of 
-python you have, is type:
+To begin the game, first `cd` into the directory in which you have `adventure.py`. Then all you need to do is type:
 
 `python3 adventure.py`
 
-or 
-
-`python adventure.py`
-
-
-and you're on your way!
+and you're on your way! (Current version does not work with Python versions lower than 3)
