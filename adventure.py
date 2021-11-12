@@ -389,7 +389,7 @@ def basement_from_ladder():
         elif 'dude' in answer:
             print("\033[H\033[J")
             talk_dude()
-        elif 'conversation' in answer:
+        elif 'convers' in answer:
             print("\033[H\033[J")
             talk_dude()
         elif 'stair' in answer:
@@ -472,7 +472,7 @@ def basement():
         elif 'dude' in answer:
             print("\033[H\033[J")
             talk_dude()
-        elif 'conversation' in answer:
+        elif 'convers' in answer:
             print("\033[H\033[J")
             talk_dude()
         elif 'ladder' in answer:
@@ -995,7 +995,7 @@ def guard():
             talk_guard()
         elif 'talk' in answer:
             talk_guard()
-        elif 'conversation' in answer:
+        elif 'convers' in answer:
             talk_guard()
         elif answer == 'back':
             print("\033[H\033[J")
