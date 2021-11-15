@@ -330,7 +330,7 @@ def kitten_poster():
             exit()
         else:
             print('\n\tYou can\'t do that.')
-            print('\tTry typing the name of a location or object')
+            print('\tTry typing an action or the name of a location')
             answer = input("> ").lower()
 
 
@@ -907,6 +907,97 @@ def skeleton():
 
 
 # --------------------------------------------------
+def heartless():
+    print("\033[H\033[J")
+    print('\tYou grab one of the biscuits and take a large bite.')
+    print('\tSuddenly your surroundings have changed in a puff of magical smoke.')
+    print('\tHave you teleported? You look around you and realize')
+    print('\tyou are on top of the tea table as small as one of the')
+    print('\tbiscuits you just ate. But something is wrong.')
+    print('\tSquinting, you can see short, shadowy creatures rushing at you')
+    print('\tfrom all sides. You can sense darkness in them.')
+    print('\tMaybe you could try to tip the vial on top of them?')
+    print('\tYou notice a glint of light from the corner of your eye.')
+    print('\tYou turn to see that a shining key about the size of your now tiny body')
+    print('\tis floating in the air in front of you.')
+    print('\tWhat good could a key do you in this situation?')
+    print('\tWhat will you do?')
+    
+    answer = input("> ").lower()
+
+    while True:
+        if 'vial' in answer:
+            game_over('This choice hasn\'t been written yet, but it will be cool')
+        elif 'key' in answer:
+            game_over('This choice hasn\'t been written yet, but it will be cool')
+        elif 'run' in answer:
+            print('\tYou attempt to run from the creatures, however, they have you surrounded.')
+            print('\tI\'ll spare you the gory details and just tell you that wasn\'t your brightest idea.')
+            game_over('You have died. Gruesomely.')
+        elif answer == 'back':
+            print('\tThere\'s no going back now. You have to make a choice.')
+            answer = input("> ").lower()
+        elif answer == 'exit':
+            exit()
+        else:
+            print('\n\tYou can\'t do that.')
+            print('\tTry typing an aciton or the name of an object')
+            answer = input("> ").lower()
+
+
+# --------------------------------------------------
+def poison():
+    print("\033[H\033[J")
+    print('\tYou reach for the strange vial and pop the cork.')
+    print('\tA puff of lavendar smoke billows from the orifice.')
+    print('\tIs it really a good idea to be drinking this?')
+    print('\tOh well. YOLO. You bring the vial to your lips and')
+    print('\tdown the whole thing in one gulp.')
+    print('\tYou then notice that the label on the vial is peeling.')
+    print('\tNervously, you bend back the peeled portion of the label so you')
+    print('\tcan clearly read what it says. "DO NOT Drink Me",')
+    print('\tsays the label. Welp. It\'s all over for you now.')
+    print('\tAs everything begins to fade to black, you wonder what might')
+    print('\thave happened had you not been so hasty.')
+    game_over('You have died')
+
+
+# --------------------------------------------------
+def wonderland_room():
+    print("\033[H\033[J")
+    print('\tYou investigate the brick. It looks like it may be coming loose.')
+    print('\tYou attempt to jiggle it and suddenly, the wall flips upward toward you')
+    print('\tscooping you up and depositing you on the other side.')
+    print('\tYou find yourself in a room with a small tea table in the center.')
+    print('\tOn the table is a vial of purple liquid labeled "Drink Me"')
+    print('\tand a plate of biscuits frosted with words reading "Eat Me".')
+    print('\tYou look behind you and test the wall for loose bricks.')
+    print('\tNothing. Looks like you can\'t go back.')
+    print('\tWhat will you do?')
+    
+    answer = input("> ").lower()
+
+    while True:
+        if 'drink' in answer:
+            poison()
+        elif 'purple' in answer:
+            poison()
+        elif 'eat' in answer:
+            heartless()
+        elif 'biscuit' in answer:
+            heartless()
+        elif answer == 'back':
+            print('\tThere\'s no going back now. You have to make a choice.')
+            answer = input("> ").lower()
+        elif answer == 'exit':
+            exit()
+        else:
+            print('\n\tYou can\'t do that.')
+            print('\tTry typing an aciton or the name of an object')
+            answer = input("> ").lower()
+
+            
+# --------------------------------------------------
 def cell_2():
     print("\033[H\033[J")
     print(
@@ -919,6 +1010,8 @@ def cell_2():
     print('\tMaybe you could climb them?')
     print('\tCuriously, there is also a wooden hatch in center of the floor.')
     print('\tWhere could it lead?')
+    print('\tYou also notice a mismatched brick sticking out of the wall.')
+    print('\tCould it be hiding something?')
     print('\tWhat will you do?')
 
     answer = input("> ").lower()
@@ -930,6 +1023,8 @@ def cell_2():
             colosseum_window_2()
         elif 'hatch' in answer:
             hatch()
+        elif 'brick' in answer:
+            wonderland_room()
         elif answer == 'back':
             print("\033[H\033[J")
             print('\tYou\'d rather go back to the cell you started in.')
