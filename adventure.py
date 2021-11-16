@@ -6,8 +6,10 @@ Purpose: Go on an Exciting Dungeon Adventure!
 """
 
 
-def play_again():
-    print("\n\tWould you like to play again? (Y/N)")
+# --------------------------------------------------
+def game_over(reason):
+    print('\n' + '\t' + reason)
+    print('\n\tWould you like to play again? (Y/N)')
 
     answer = input("> ").lower()
 
@@ -19,12 +21,6 @@ def play_again():
         cell_1()
     else:
         exit()
-
-
-# --------------------------------------------------
-def game_over(reason):
-    print('\n' + '\t' + reason)
-    play_again()
 
 
 # --------------------------------------------------
@@ -906,6 +902,45 @@ def skeleton():
             answer = input("> ").lower()
 
 
+
+# --------------------------------------------------
+def keyblade_master():
+    print("\033[H\033[J")
+    print('\tYou rush over to the key, reaching out for it desperately.')
+    print('\tSuddenly, it disappears. You look down to see it has materialized')
+    print('\tin your right hand. You feel a magical surge rush through you.')
+    print('\tYou strike one of the creatures with the key and it vaporizes.')
+    print('\tTanking through the onslaught, you slash the mass of shadows until')
+    print('\tonly you and the key remain. You can feel the effects of the biscuit')
+    print('\twearing off as you return to your full size, key still in hand.')
+    print('\tA pillar of light beams down on the back wall and a shining keyhole appears.')
+    print('\tInstinctively, you hold the key to the hole. A beam shoots from the end,')
+    print('\tand a previously invisible door opens in the wall.')
+    print('\tThe door leads to the outside! You\'ve done it! You\'re free!')
+    print('\tJust before you take off running for home, you hear a faint voice on the wind.')
+    print('\t"Well done, keyblade master." it says.')
+    game_over('Because of your courage, you were able to excape! Congratulations!')
+
+
+# --------------------------------------------------
+def darkness():
+    print("\033[H\033[J")
+    print('\tIgnoring the key, you run to the vial before the creatures get to you.')
+    print('\tUsing all your strength, you push the vial in an attempt')
+    print('\tto crush the creatures under its weight. Having shrunk yourself,')
+    print('\tthe vial is now much bigger and heavier than you are.')
+    print('\tYou doubt you\'ll be able to tip it over before the shadows get you.')
+    print('\tSoon, you find yourself surrounded.')
+    print('\tThe creatures begin to climb all over you. Not able to hold their weight,')
+    print('\tyou topple to the floor. One of the creatures shoves a shadowy hand into your chest.')
+    print('\tAn instant later, the creature pulls out what looks like a pink cartoonish heart.')
+    print('\tYou begin to feel yourself slipping away.')
+    print('\tBefore your vision fades, you see the key fly over to where you are,')
+    print('\tand strike one of the shadows. The creature vaporizes,')
+    print('\tand the key appears in your right hand. Then everything goes black.')
+    game_over('You have died')
+
+
 # --------------------------------------------------
 def heartless():
     print("\033[H\033[J")
@@ -927,13 +962,21 @@ def heartless():
 
     while True:
         if 'vial' in answer:
-            game_over('This choice hasn\'t been written yet, but it will be cool')
+            darkness()
         elif 'key' in answer:
-            game_over('This choice hasn\'t been written yet, but it will be cool')
+            keyblade_master()
         elif 'run' in answer:
-            print('\tYou attempt to run from the creatures, however, they have you surrounded.')
-            print('\tI\'ll spare you the gory details and just tell you that wasn\'t your brightest idea.')
-            game_over('You have died. Gruesomely.')
+            print("\033[H\033[J")
+            print('\tYou attempt to run from the creatures; however, they have you surrounded.')
+            print('\tRunning away probably wasn\'t your brightest idea.')
+            print('\tThe creatures begin to climb all over you. Not able to hold their weight,')
+            print('\tyou topple to the floor. One of the creatures shoves a shadowy hand into your chest.')
+            print('\tAn instant later, the creature pulls out what looks like a pink cartoonish heart.')
+            print('\tYou begin to feel yourself slipping away.')
+            print('\tBefore your vision fades, you see the key fly over to where you are,')
+            print('\tand strike one of the shadows. The creature vaporizes,')
+            print('\tand the key appears in your right hand. Then everything goes black.')
+            game_over('You have died a cowardly death.')
         elif answer == 'back':
             print('\tThere\'s no going back now. You have to make a choice.')
             answer = input("> ").lower()
