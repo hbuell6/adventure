@@ -917,9 +917,9 @@ def keyblade_master():
     print('\tInstinctively, you hold the key to the hole. A beam shoots from the end,')
     print('\tand a previously invisible door opens in the wall.')
     print('\tThe door leads to the outside! You\'ve done it! You\'re free!')
-    print('\tJust before you take off running for home, you hear a faint voice on the wind.')
+    print('\tJust before you take off running for home, you hear a faint voice in the wind.')
     print('\t"Well done, keyblade master." it says.')
-    game_over('Because of your courage, you were able to excape! Congratulations!')
+    game_over('Because of your courage, you were able to escape! Congratulations!')
 
 
 # --------------------------------------------------
