@@ -12,15 +12,17 @@ def game_over(reason):
     print('\n\tWould you like to play again? (Y/N)')
 
     answer = input("> ").lower()
+    
+    while True:
 
-    if answer.startswith('y'):
-        print("\033[H\033[J")
-        print('\tYou awake in a dark cell.')
-        print('\tWondering how you ended up in such a place,')
-        print('\tyou look around to get your bearings.')
-        cell_1()
-    else:
-        exit()
+        if answer.startswith('y'):
+            print("\033[H\033[J")
+            print('\tYou awake in a dark cell.')
+            print('\tWondering how you ended up in such a place,')
+            print('\tyou look around to get your bearings.')
+            cell_1()
+        else:
+            break
 
 
 # --------------------------------------------------
@@ -94,7 +96,7 @@ def talk_dude():
             )
             colosseum_from_stairs()
         elif answer == 'exit':
-            exit()
+            break
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing big or shiny')
@@ -162,7 +164,7 @@ def escape_pod():
             )
             answer = input("> ").lower()
         elif answer == 'exit':
-            exit()
+            break
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing blue or yellow')
@@ -175,13 +177,20 @@ def hall_hatch():
     print('\tYou turn right down the hall and reach a dead end.')
     print('\tSeeing nothing at all of interest, you are about to turn back')
     print('\twhen all of a sudden, the floor opens beneath you!')
-    print('\tYou start to fall, but you barely manage to grab the edge with both hands')
+    print(
+        '\tYou start to fall, but you barely manage to grab the edge with both hands'
+    )
     print('\tYou definitely don\'t have a very good grip though.')
-    print('\tYou turn your head behind you to look down. You can see an orange glow.')
+    print(
+        '\tYou turn your head behind you to look down. You can see an orange glow.'
+    )
     print('\tLooks like you\'re dangling just above a fiery pit.')
-    print('\tYou feel your hands begin to grow numb from supporting your weight.')
+    print(
+        '\tYou feel your hands begin to grow numb from supporting your weight.'
+    )
     print('\tThey slip from the ledge and you begin your descent.')
-    print('\tAs you grow closer to the glow, you realize it\'s a large dragon,')
+    print(
+        '\tAs you grow closer to the glow, you realize it\'s a large dragon,')
     print('\tmouth agape, waiting for it\'s next meal. That\'s a shame.')
     print('\tBurning alive almost sounds preferable to being eaten alive.')
     print('\tBut I guess you don\'t get that choice this time.')
@@ -215,7 +224,7 @@ def hallway_2():
             )
             CEO_cell()
         elif answer == 'exit':
-            exit()
+            break
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing left or right')
@@ -280,7 +289,7 @@ def jump():
             print('\tYou can\'t go back! The wall is too high!')
             answer = input("> ").lower()
         elif answer == 'exit':
-            exit()
+            break
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing an action')
@@ -323,7 +332,7 @@ def kitten_poster():
             )
             CEO_cell()
         elif answer == 'exit':
-            exit()
+            break
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing an action or the name of a location')
@@ -354,7 +363,7 @@ def CEO_cell():
         elif answer == 'back':
             basement_from_ladder()
         elif answer == 'exit':
-            exit()
+            break
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing the name of a location or object')
@@ -399,7 +408,7 @@ def basement_from_ladder():
             )
             colosseum_from_stairs()
         elif answer == 'exit':
-            exit()
+            break
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing the name of a location or object')
@@ -437,7 +446,7 @@ def ladder():
         elif answer == 'back':
             basement_from_ladder()
         elif answer == 'exit':
-            exit()
+            break
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing up or down')
@@ -482,7 +491,7 @@ def basement():
             )
             colosseum_from_stairs()
         elif answer == 'exit':
-            exit()
+            break
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing the name of a location or object')
@@ -546,7 +555,7 @@ def secret_passage():
             print('\n\tNo going back now, it\'s too narrow to turn around.')
             answer = input("> ").lower()
         elif answer == 'exit':
-            exit()
+            break
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing left or straight')
@@ -590,7 +599,7 @@ def talk_dennis():
             print('\tYou leave the room and ignore Dennis. Poor guy.')
             colosseum_from_dennis()
         elif answer == 'exit':
-            exit()
+            break
         else:
             print("\033[H\033[J")
             print('\tYou leave the room and ignore Dennis. Poor guy.')
@@ -632,7 +641,7 @@ def colosseum_from_stairs():
             print('\tActually, that basement looked pretty interesting.')
             basement()
         elif answer == 'exit':
-            exit()
+            break
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing the name of a location or object')
@@ -669,7 +678,7 @@ def colosseum_from_dennis():
             )
             dennis()
         elif answer == 'exit':
-            exit()
+            break
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing the name of a location or object')
@@ -719,7 +728,7 @@ def dennis():
         elif answer == 'back':
             colo_from_dennis_1()
         elif answer == 'exit':
-            exit()
+            break
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing the name of a location or object')
@@ -757,7 +766,7 @@ def colosseum():
             print('\tYou\'d rather try your luck back in the cell.')
             cell_1()
         elif answer == 'exit':
-            exit()
+            break
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing the name of a location or object')
@@ -799,7 +808,7 @@ def colosseum_window_2():
             print('\tYou\'d rather try your luck back in the cell.')
             cell_2()
         elif answer == 'exit':
-            exit()
+            break
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing the name of a location or object')
@@ -895,49 +904,73 @@ def skeleton():
             print('\tYou\'d rather try your luck back in the cell.')
             cell_1()
         elif answer == 'exit':
-            exit()
+            break
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing left or right')
             answer = input("> ").lower()
 
 
-
 # --------------------------------------------------
 def keyblade_master():
     print("\033[H\033[J")
     print('\tYou rush over to the key, reaching out for it desperately.')
-    print('\tSuddenly, it disappears. You look down to see it has materialized')
+    print(
+        '\tSuddenly, it disappears. You look down to see it has materialized')
     print('\tin your right hand. You feel a magical surge rush through you.')
     print('\tYou strike one of the creatures with the key and it vaporizes.')
-    print('\tTanking through the onslaught, you slash the mass of shadows until')
-    print('\tonly you and the key remain. You can feel the effects of the biscuit')
+    print(
+        '\tTanking through the onslaught, you slash the mass of shadows until')
+    print(
+        '\tonly you and the key remain. You can feel the effects of the biscuit'
+    )
     print('\twearing off as you return to your full size, key still in hand.')
-    print('\tA pillar of light beams down on the back wall and a shining keyhole appears.')
-    print('\tInstinctively, you hold the key to the hole. A beam shoots from the end,')
+    print(
+        '\tA pillar of light beams down on the back wall and a shining keyhole appears.'
+    )
+    print(
+        '\tInstinctively, you hold the key to the hole. A beam shoots from the end,'
+    )
     print('\tand a previously invisible door opens in the wall.')
     print('\tThe door leads to the outside! You\'ve done it! You\'re free!')
-    print('\tJust before you take off running for home, you hear a faint voice in the wind.')
+    print(
+        '\tJust before you take off running for home, you hear a faint voice in the wind.'
+    )
     print('\t"Well done, keyblade master." it says.')
-    game_over('Because of your courage, you were able to escape! Congratulations!')
+    game_over(
+        'Because of your courage, you were able to escape! Congratulations!')
 
 
 # --------------------------------------------------
 def darkness():
     print("\033[H\033[J")
-    print('\tIgnoring the key, you run to the vial before the creatures get to you.')
+    print(
+        '\tIgnoring the key, you run to the vial before the creatures get to you.'
+    )
     print('\tUsing all your strength, you push the vial in an attempt')
     print('\tto crush the creatures under its weight. Having shrunk yourself,')
     print('\tthe vial is now much bigger and heavier than you are.')
-    print('\tYou doubt you\'ll be able to tip it over before the shadows get you.')
+    print(
+        '\tYou doubt you\'ll be able to tip it over before the shadows get you.'
+    )
     print('\tSoon, you find yourself surrounded.')
-    print('\tThe creatures begin to climb all over you. Not able to hold their weight,')
-    print('\tyou topple to the floor. One of the creatures shoves a shadowy hand into your chest.')
-    print('\tAn instant later, the creature pulls out what looks like a pink cartoonish heart.')
+    print(
+        '\tThe creatures begin to climb all over you. Not able to hold their weight,'
+    )
+    print(
+        '\tyou topple to the floor. One of the creatures shoves a shadowy hand into your chest.'
+    )
+    print(
+        '\tAn instant later, the creature pulls out what looks like a pink cartoonish heart.'
+    )
     print('\tYou begin to feel yourself slipping away.')
-    print('\tBefore your vision fades, you see the key fly over to where you are,')
+    print(
+        '\tBefore your vision fades, you see the key fly over to where you are,'
+    )
     print('\tand strike one of the shadows. The creature vaporizes,')
-    print('\tand the key appears in your right hand. Then everything goes black.')
+    print(
+        '\tand the key appears in your right hand. Then everything goes black.'
+    )
     game_over('You have died')
 
 
@@ -945,7 +978,9 @@ def darkness():
 def heartless():
     print("\033[H\033[J")
     print('\tYou grab one of the biscuits and take a large bite.')
-    print('\tSuddenly your surroundings have changed in a puff of magical smoke.')
+    print(
+        '\tSuddenly your surroundings have changed in a puff of magical smoke.'
+    )
     print('\tHave you teleported? You look around and realize')
     print('\tyou are on top of the tea table as small as one of the')
     print('\tbiscuits you just ate. But something is wrong.')
@@ -953,11 +988,13 @@ def heartless():
     print('\tfrom all sides. You can sense darkness in them.')
     print('\tMaybe you could try to tip the vial on top of them?')
     print('\tYou notice a glint of light from the corner of your eye.')
-    print('\tYou turn to see that a shining key about the size of your now tiny body')
+    print(
+        '\tYou turn to see that a shining key about the size of your now tiny body'
+    )
     print('\tis floating in the air in front of you.')
     print('\tWhat good could a key do you in this situation?')
     print('\tWhat will you do?')
-    
+
     answer = input("> ").lower()
 
     while True:
@@ -967,21 +1004,35 @@ def heartless():
             keyblade_master()
         elif 'run' in answer:
             print("\033[H\033[J")
-            print('\tYou attempt to run from the creatures; however, they have you surrounded.')
+            print(
+                '\tYou attempt to run from the creatures; however, they have you surrounded.'
+            )
             print('\tRunning away probably wasn\'t your brightest idea.')
-            print('\tThe creatures begin to climb all over you. Not able to hold their weight,')
-            print('\tyou topple to the floor. One of the creatures shoves a shadowy hand into your chest.')
-            print('\tAn instant later, the creature pulls out what looks like a pink cartoonish heart.')
-            print('\tYou begin to feel yourself slipping away. Was that your soul it pulled out?')
-            print('\tBefore your vision fades, you see the key fly over to where you are,')
+            print(
+                '\tThe creatures begin to climb all over you. Not able to hold their weight,'
+            )
+            print(
+                '\tyou topple to the floor. One of the creatures shoves a shadowy hand into your chest.'
+            )
+            print(
+                '\tAn instant later, the creature pulls out what looks like a pink cartoonish heart.'
+            )
+            print(
+                '\tYou begin to feel yourself slipping away. Was that your soul it pulled out?'
+            )
+            print(
+                '\tBefore your vision fades, you see the key fly over to where you are,'
+            )
             print('\tand strike one of the shadows. The creature vaporizes,')
-            print('\tand the key appears in your right hand. Then everything goes black.')
+            print(
+                '\tand the key appears in your right hand. Then everything goes black.'
+            )
             game_over('You have died a cowardly death.')
         elif answer == 'back':
             print('\tThere\'s no going back now. You have to make a choice.')
             answer = input("> ").lower()
         elif answer == 'exit':
-            exit()
+            break
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing an aciton or the name of an object')
@@ -1009,15 +1060,18 @@ def poison():
 def wonderland_room():
     print("\033[H\033[J")
     print('\tYou investigate the brick. It looks like it may be coming loose.')
-    print('\tYou attempt to jiggle it and suddenly, the wall flips upward toward you')
+    print(
+        '\tYou attempt to jiggle it and suddenly, the wall flips upward toward you'
+    )
     print('\tscooping you up and depositing you on the other side.')
-    print('\tYou find yourself in a room with a small tea table in the center.')
+    print(
+        '\tYou find yourself in a room with a small tea table in the center.')
     print('\tOn the table is a vial of purple liquid labeled "Drink Me"')
     print('\tand a plate of biscuits frosted with words reading "Eat Me".')
     print('\tYou look behind you and test the wall for loose bricks.')
     print('\tNothing. Looks like you can\'t go back.')
     print('\tWhat will you do?')
-    
+
     answer = input("> ").lower()
 
     while True:
@@ -1033,13 +1087,13 @@ def wonderland_room():
             print('\tThere\'s no going back now. You have to make a choice.')
             answer = input("> ").lower()
         elif answer == 'exit':
-            exit()
+            break
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing an aciton or the name of an object')
             answer = input("> ").lower()
 
-            
+
 # --------------------------------------------------
 def cell_2():
     print("\033[H\033[J")
@@ -1073,7 +1127,7 @@ def cell_2():
             print('\tYou\'d rather go back to the cell you started in.')
             cell_1()
         elif answer == 'exit':
-            exit()
+            break
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing the name of a location or object')
@@ -1142,7 +1196,7 @@ def guard():
             )
             cell_1()
         elif answer == 'exit':
-            exit()
+            break
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing an action or the name of a location or object')
@@ -1178,10 +1232,11 @@ def hallway_1():
             guard()
         elif answer == 'back':
             print("\033[H\033[J")
-            print('\tYou head back into the cell, closing the door behind you.')
+            print(
+                '\tYou head back into the cell, closing the door behind you.')
             cell_1()
         elif answer == 'exit':
-            exit()
+            break
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing left or right')
@@ -1217,7 +1272,7 @@ def moss():
             )
             cell_1()
         elif answer == 'exit':
-            exit()
+            break
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing the name of a location or object')
@@ -1252,7 +1307,7 @@ def cell_1():
         elif 'rope' in answer:
             colosseum_window()
         elif answer == 'exit':
-            exit()
+            break
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing the name of a location or object')
@@ -1279,14 +1334,15 @@ def start():
 
     answer = input("> ").lower()
 
-    if answer.startswith('y'):
-        print("\033[H\033[J")
-        print('\tYou awake in a dark cell.')
-        print('\tWondering how you ended up in such a place,')
-        print('\tyou look around to get your bearings.')
-        cell_1()
-    else:
-        exit()
+    while True:
+        if answer.startswith('y'):
+            print("\033[H\033[J")
+            print('\tYou awake in a dark cell.')
+            print('\tWondering how you ended up in such a place,')
+            print('\tyou look around to get your bearings.')
+            cell_1()
+        else:
+            break
 
 
 # --------------------------------------------------
