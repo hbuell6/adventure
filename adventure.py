@@ -22,7 +22,7 @@ def game_over(reason):
             print('\tyou look around to get your bearings.')
             cell_1()
         else:
-            break
+            exit()
 
 
 # --------------------------------------------------
@@ -96,7 +96,7 @@ def talk_dude():
             )
             colosseum_from_stairs()
         elif answer == 'exit':
-            break
+            exit()
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing big or shiny')
@@ -164,7 +164,7 @@ def escape_pod():
             )
             answer = input("> ").lower()
         elif answer == 'exit':
-            break
+            exit()
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing blue or yellow')
@@ -224,7 +224,7 @@ def hallway_2():
             )
             CEO_cell()
         elif answer == 'exit':
-            break
+            exit()
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing left or right')
@@ -289,7 +289,7 @@ def jump():
             print('\tYou can\'t go back! The wall is too high!')
             answer = input("> ").lower()
         elif answer == 'exit':
-            break
+            exit()
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing an action')
@@ -306,7 +306,7 @@ def kitten_poster():
     )
     print('\tYou can now see the sky. Maybe you can get out from here?')
     print('\tYou climb the cell wall and look down to see a moat.')
-    print('\tIf you jump, it might be enough to break your fall safely.')
+    print('\tIf you jump, it might be enough to exit your fall safely.')
     print(
         '\tOn the other hand, you could play it safe and head back into the cell'
     )
@@ -332,7 +332,7 @@ def kitten_poster():
             )
             CEO_cell()
         elif answer == 'exit':
-            break
+            exit()
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing an action or the name of a location')
@@ -363,7 +363,7 @@ def CEO_cell():
         elif answer == 'back':
             basement_from_ladder()
         elif answer == 'exit':
-            break
+            exit()
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing the name of a location or object')
@@ -408,7 +408,7 @@ def basement_from_ladder():
             )
             colosseum_from_stairs()
         elif answer == 'exit':
-            break
+            exit()
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing the name of a location or object')
@@ -446,7 +446,7 @@ def ladder():
         elif answer == 'back':
             basement_from_ladder()
         elif answer == 'exit':
-            break
+            exit()
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing up or down')
@@ -491,7 +491,7 @@ def basement():
             )
             colosseum_from_stairs()
         elif answer == 'exit':
-            break
+            exit()
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing the name of a location or object')
@@ -555,7 +555,7 @@ def secret_passage():
             print('\n\tNo going back now, it\'s too narrow to turn around.')
             answer = input("> ").lower()
         elif answer == 'exit':
-            break
+            exit()
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing left or straight')
@@ -599,7 +599,7 @@ def talk_dennis():
             print('\tYou leave the room and ignore Dennis. Poor guy.')
             colosseum_from_dennis()
         elif answer == 'exit':
-            break
+            exit()
         else:
             print("\033[H\033[J")
             print('\tYou leave the room and ignore Dennis. Poor guy.')
@@ -641,7 +641,7 @@ def colosseum_from_stairs():
             print('\tActually, that basement looked pretty interesting.')
             basement()
         elif answer == 'exit':
-            break
+            exit()
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing the name of a location or object')
@@ -678,7 +678,7 @@ def colosseum_from_dennis():
             )
             dennis()
         elif answer == 'exit':
-            break
+            exit()
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing the name of a location or object')
@@ -728,7 +728,7 @@ def dennis():
         elif answer == 'back':
             colo_from_dennis_1()
         elif answer == 'exit':
-            break
+            exit()
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing the name of a location or object')
@@ -766,7 +766,7 @@ def colosseum():
             print('\tYou\'d rather try your luck back in the cell.')
             cell_1()
         elif answer == 'exit':
-            break
+            exit()
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing the name of a location or object')
@@ -808,7 +808,7 @@ def colosseum_window_2():
             print('\tYou\'d rather try your luck back in the cell.')
             cell_2()
         elif answer == 'exit':
-            break
+            exit()
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing the name of a location or object')
@@ -904,7 +904,7 @@ def skeleton():
             print('\tYou\'d rather try your luck back in the cell.')
             cell_1()
         elif answer == 'exit':
-            break
+            exit()
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing left or right')
@@ -1032,7 +1032,7 @@ def heartless():
             print('\tThere\'s no going back now. You have to make a choice.')
             answer = input("> ").lower()
         elif answer == 'exit':
-            break
+            exit()
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing an aciton or the name of an object')
@@ -1087,7 +1087,7 @@ def wonderland_room():
             print('\tThere\'s no going back now. You have to make a choice.')
             answer = input("> ").lower()
         elif answer == 'exit':
-            break
+            exit()
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing an aciton or the name of an object')
@@ -1127,7 +1127,7 @@ def cell_2():
             print('\tYou\'d rather go back to the cell you started in.')
             cell_1()
         elif answer == 'exit':
-            break
+            exit()
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing the name of a location or object')
@@ -1196,7 +1196,7 @@ def guard():
             )
             cell_1()
         elif answer == 'exit':
-            break
+            exit()
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing an action or the name of a location or object')
@@ -1236,7 +1236,7 @@ def hallway_1():
                 '\tYou head back into the cell, closing the door behind you.')
             cell_1()
         elif answer == 'exit':
-            break
+            exit()
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing left or right')
@@ -1272,7 +1272,7 @@ def moss():
             )
             cell_1()
         elif answer == 'exit':
-            break
+            exit()
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing the name of a location or object')
@@ -1307,7 +1307,7 @@ def cell_1():
         elif 'rope' in answer:
             colosseum_window()
         elif answer == 'exit':
-            break
+            exit()
         else:
             print('\n\tYou can\'t do that.')
             print('\tTry typing the name of a location or object')
@@ -1342,7 +1342,7 @@ def start():
             print('\tyou look around to get your bearings.')
             cell_1()
         else:
-            break
+            exit()
 
 
 # --------------------------------------------------
